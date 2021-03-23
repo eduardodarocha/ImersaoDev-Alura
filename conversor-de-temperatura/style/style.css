@@ -1,0 +1,46 @@
+﻿        body {
+            font-family: "Roboto Mono", monospace;
+            min-height: 450px;
+            background: url("https://thumbs.dreamstime.com/b/term-metro-celsius-e-fahrenheit-85958505.jpg") no-repeat bottom left, url("https://thumbs.dreamstime.com/b/term-metro-celsius-e-fahrenheit-85958505.jpg") no-repeat bottom right;
+            background-color: #000000;
+            background-size: 70vh;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 20px;
+            height: 80vh;
+        }
+        
+        .page-title {
+            color: red;
+            margin: 0 0 5px;
+        }
+        
+        .page-subtitle {
+            color: #ffffff;
+            margin-top: auto;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .page-logo {
+            width: 200px;
+        }
+        
+        .alura-logo {
+            width: 40px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        #valueinput {
+            width: 200px;
+        }
+        
+        #valueconverted {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 0);
+            font-weight: 600;
+        }

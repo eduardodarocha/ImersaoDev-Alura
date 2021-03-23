@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev - Aula 01 Desafio 02</title>
+    <link href="./style/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="logo">
+
+    <div class="container">
+        <h1 class="page-title">
+            Conversor de Temperatura
+        </h1>
+        <p class="page-subtitle">
+            Celsius °C -> Fahrenheit °F <br>
+        </p>
+        <input id="inputvaluecelsius" type="number" placeholder="Valor em °Celsius">
+        <p> <button onclick="converterEmFahrenheit()">Converter em Fahrenheit</button></p>
+        <p class="page-title">O valor em Fahrenheit é: <span id="valuefahrenheitconverted"></span></p>
+
+
+        <p class="page-subtitle"> Fahrenheit °F -> Celsius</p>
+        <input id="inputvaluefahrenheit" type="number" placeholder="Valor em °Fahrenheit">
+        <p> <button onclick="converterEmCelsius()">Converter em Celsius</button></p>
+        <p class="page-title">O valor em Celsius é:<span id="valuecelsiusconverted"></span></p>
+
+
+
+
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="logo" class="alura-logo">
+    </a>
+
+    <script type='text/javascript' src='./script/script.js'></script>
+
+</body>
+
+</html>

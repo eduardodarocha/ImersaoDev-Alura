@@ -1,0 +1,64 @@
+﻿        body {
+            font-family: "Roboto Mono", monospace;
+            min-height: 450px;
+            /* background-image: url("http://midia.gruposinos.com.br/_midias/jpg/2015/08/11/andromeda_galaxy_2-981925.jpg"); */
+            background-image: url(https://cdn.universoracionalista.org/wp-content/uploads/2020/06/gargantua-scaled.jpg);
+            background-color: #000000;
+            /* background-size: 100vh; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 20px;
+            height: 100vh;
+        }
+        
+        .page-title {
+            color: rgb(0, 0, 0);
+            background-color: rgba(139, 218, 255, 0.5);
+            margin: auto;
+            width: fit-content;
+            text-align: center;
+            border-radius: 6px;
+            padding: 0 5px 0;
+        }
+        
+        p.page-title {
+            font-size: 20px;
+        }
+        
+        .page-subtitle {
+            color: #ffffff;
+            margin-top: auto;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .page-logo {
+            width: 200px;
+        }
+        
+        .alura-logo {
+            width: 40px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        #valueinput {
+            width: 200px;
+        }
+        
+        #valueconverted {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 0);
+            font-weight: 600;
+        }
+        
+        input {
+            width: 200px;
+            height: 20px;
+        }

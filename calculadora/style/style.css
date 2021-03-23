@@ -1,0 +1,73 @@
+﻿body {
+    font-family: 'Roboto Mono', monospace;
+    min-height: 854px;
+    background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-2-calculadora-certa.png');
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.page-logo {
+    width: 200px;
+}
+
+.calculadora {
+    width: 264px;
+    height: 360px;
+    /* background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-2-calculadora-calc.png'); */
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ae/Windows_7_Calculator.png');
+    margin: 0 auto;
+    position: relative;
+}
+
+h2 {
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+    top: 435px;
+    left: calc(50% - 97.5px);
+    width: 184px;
+    text-align: right;
+    color: 3f3f3fce;
+    background-color: white;
+    font-family: 'LCD14Condensed';
+    height: 42px;
+    padding-top: 6px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.valores {
+    color: #ffffff;
+}
+
+input {
+    font-family: 'LCD14ItalicCondensed';
+    font-weight: normal;
+    color: #3e3e5cce;
+    font-size: 25px;
+    background-color: #bdeee2e7;
+    border-radius: 10px;
+}

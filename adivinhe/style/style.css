@@ -1,0 +1,105 @@
+﻿ body {
+     font-family: "Roboto Mono", monospace;
+     min-height: 750px;
+     background-image: url("https://criticalhits.com.br/wp-content/uploads/2020/02/mck-modo-s%C3%A1bio-naruto-chakra-kurama-kcm.jpg");
+     /* background-size: 90vh; */
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+ 
+ .container {
+     text-align: center;
+     padding: 10px;
+     height: 100vh;
+ }
+ 
+ .page-title {
+     color: rgb(0, 0, 0);
+     background-color: rgba(252, 248, 0, 0.74);
+     margin: auto;
+     width: fit-content;
+     text-align: center;
+     border-radius: 6px;
+     padding: 0 5px 0;
+ }
+ 
+ p.page-title {
+     font-size: 20px;
+     font-family: "Roboto Mono", monospace;
+ }
+ 
+ .page-subtitle {
+     color: #ffffff;
+     margin-top: auto;
+     font-size: 20px;
+     text-align: center;
+ }
+ 
+ .page-logo {
+     width: 200px;
+     margin: auto;
+     display: flex;
+     background-color: rgb(0, 0, 0);
+     margin-top: 10px;
+ }
+ 
+ .alura-logo {
+     width: 40px;
+     position: absolute;
+     top: 10px;
+     right: 10px;
+ }
+ 
+ #valueinput {
+     width: 200px;
+ }
+ 
+ #valueconverted {
+     color: rgb(0, 0, 0);
+     background-color: rgb(255, 255, 0);
+     font-weight: 600;
+ }
+ 
+ input {
+     width: 200px;
+     height: 30px;
+     color: rgb(0, 0, 0);
+     border-radius: 7px;
+     font-size: 20px;
+     text-align: center;
+     font-family: "Roboto Mono", monospace;
+ }
+ 
+ #imagem {
+     width: 455px;
+     height: 308px;
+     text-align: center;
+     border: 10px #ffff00 ridge;
+ }
+ 
+ .botao {
+     display: inline-block;
+     padding: 4px 17px;
+     font-size: 20px;
+     cursor: pointer;
+     text-align: center;
+     text-decoration: none;
+     outline: none;
+     color: #000;
+     background-color: #fffe06c4;
+     border: 1px solid #929292;
+     border-radius: 14px;
+     box-shadow: 0 6px #b4b102c9;
+     font-family: "Roboto Mono", monospace;
+ }
+ 
+ .botao:hover {
+     background-color: #bb9900be
+ }
+ 
+ .botao:active {
+     background-color: #00b890be;
+     box-shadow: 0 5px #666;
+     transform: translateY(5px);
+ }

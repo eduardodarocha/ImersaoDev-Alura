@@ -1,1 +1,101 @@
-﻿
+﻿body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 600px;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    background-image: url("https://www.elitedetetives.com.br/blog/wp-content/webp-express/webp-images/doc-root/blog/wp-content/uploads/2020/06/o-detetive-e-a-invasao-de-privacidade.jpg.webp");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    color: #00c521;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.page-logo {
+    width: 200px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media (max-height: 500px) {
+    body {
+        min-height: 800px;
+    }
+}
+
+#dica {
+    color: #00c521;
+    font-size: 20px;
+    background-color: #00000096;
+    border-radius: 10px;
+    padding: 0 4px 0 4px;
+    font-size: 25px;
+}
+
+h2 {
+    color: #00c521;
+    background-color: #00000096;
+    border-radius: 10px;
+    padding: 0 4px 0 4px;
+    width: fit-content;
+    text-align: center;
+    margin: 10px auto 10px auto;
+}
+
+#inputguess {
+    height: 22px;
+    font-size: 18px;
+    text-align: center;
+    width: 190px;
+}
+
+button {
+    /* height: 25px;
+    font-size: 18px;
+    border-radius: 5px; */
+    display: inline-block;
+    padding: 4px 17px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: #0fc021;
+    border: 1px solid #929292;
+    border-radius: 14px;
+    box-shadow: 0 6px #24922f;
+    font-family: "Roboto Mono", monospace;
+}
+
+button:hover {
+    background-color: #1a8d0bbb
+}
+
+button:active {
+    background-color: #0d5304be;
+    box-shadow: 0 5px rgb(20, 53, 15);
+    transform: translateY(5px);
+}

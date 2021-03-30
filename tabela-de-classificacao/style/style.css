@@ -1,0 +1,94 @@
+﻿* {
+    text-align: center;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 400px;
+    background-image: url("https://www.atribuna.com.br/image/contentid/policy:1.105065:1592230349/Maracan.jpg");
+    background-color: #111;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.page-logo {
+    width: 200px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+table {
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+h1 {
+    color: white;
+}
+
+table {
+    margin: auto;
+}
+
+th,
+tr,
+td {
+    border: solid 2px white;
+    color: rgb(255, 255, 255);
+}
+
+#limpar {
+    margin-top: 10px;
+}
+
+#vitoria {
+    background-color: rgba(0, 255, 0, 0.5);
+    text-shadow: -2px 2px 2px black;
+}
+
+#empate {
+    background-color: rgba(255, 255, 0, 0.8);
+    text-shadow: -2px 2px 2px black;
+}
+
+#derrota {
+    background-color: rgba(255, 0, 0, 0.8);
+    text-shadow: -2px 2px 2px black;
+}
+
+#pontos {
+    background-color: rgba(0, 255, 255, 0.5);
+    text-shadow: -2px 2px 2px black;
+}
+
+#acao {
+    background-color: rgba(4, 0, 255, 0.5);
+    text-shadow: -2px 2px 2px black;
+}
+
+#nome {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: -2px 2px 2px black;
+}

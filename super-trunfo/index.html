@@ -11,23 +11,24 @@
 
 <body>
     <div class="container">
-        <img id="page-logo" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png"
-            class="page-logo" alt="">
+        <img id="page-logo" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo" alt="">
         <h1 class="page-title">Super Trunfo</h1>
 
-        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+        <button onclick="sortearCarta()" id="btnSortear">Sortear as carta</button>
         <p class="carta" id="imagens"></p>
         <p class="carta" id="imagensx"></p>
         <p class="carta" id="imagens2"></p>
 
 
-
+        <p style="display: none;" id="resultado"></p>
         <form id="form">
-            <h2>Escolha o seu atributo</h2>
-            <div class="opcoes" id="opcoes"></div>
+
+            <h2 id="escolheatributotexto" style="display:none">Escolha o seu atributo</h2>
+            <div class="opcoes" id="opcoes" style="display:none"></div>
             <button type="button" id="btnJogar" onclick="jogar()" style="display:none">Jogar</button>
-            <!-- <button type="button " id="btnJogar " onclick="jogar() " disabled="false ">Jogar</button> -->
+
         </form>
+        <p><button type="button" id="iniciar" onclick="window.location.reload(true)">Refresh</button></p>
     </div>
 
 

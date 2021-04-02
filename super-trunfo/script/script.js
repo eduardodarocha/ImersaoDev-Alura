@@ -170,32 +170,31 @@ var cartaMaquina;
 var cartaJogador;
 var cartas = [shuraDeCapricornio, afroditeDePeixes, aldebaranDeTouro, camusDeAquario, miloDeEscorpiao, dohkoDeLibra, shakaDeVirgem, sagaDeGemeos, muDeAries, aioliaDeLeao, mascaraDaMorteDeCancer, aiolosDeSargitario];
 
+function inicio() {
+    document.getElementById("imagens").innerHTML = "<img id='carta' src='https://i.pinimg.com/736x/5e/e1/5e/5ee15e6e5a543357dd0542dbfc50da1f.jpg'>"
+    document.getElementById("imagensx").innerHTML = "<img id='imagex' src='https://imagensemoldes.com.br/wp-content/uploads/2021/02/Clip-Art-Letra-X-PNG.png'>"
+
+    document.getElementById("imagens2").innerHTML = "<img id='carta' src='https://i.pinimg.com/736x/5e/e1/5e/5ee15e6e5a543357dd0542dbfc50da1f.jpg'>"
+}
+inicio()
+
+
 function mostrarimagens(indiceplayer, indicemachine) {
     var cartaMachine = document.getElementById("imagens2")
     document.getElementById("imagens").innerHTML = "<img id='carta' src='" + cartas[indiceplayer].imagem + "'>"
-    document.getElementById("imagensx").innerHTML = "<img id='carta' src='https://imagensemoldes.com.br/wp-content/uploads/2021/02/Clip-Art-Letra-X-PNG.png'>"
+    document.getElementById("imagensx").innerHTML = "<img id='imagex' src='https://imagensemoldes.com.br/wp-content/uploads/2021/02/Clip-Art-Letra-X-PNG.png'>"
 
     document.getElementById("imagens2").innerHTML = "<img id='carta' src='https://i.pinimg.com/736x/5e/e1/5e/5ee15e6e5a543357dd0542dbfc50da1f.jpg'>"
-    console.log(cartaMachine.value)
-
-
-    // var mostrarimagemPlayer = ""
-    //     var todasImagens = "";
-    //     for (var i = 0; i < cartas.length; i++) {
-    //         todasImagens += "<img id='carta' src='" + cartas[i].imagem + "'>";
-    //     }
-    //     console.log(todasImagens)
-    //     pImagens.innerHTML = todasImagens;
 
 }
-// mostrarimagens()
+
 var numeroCartaMaquina = ""
 
 function sortearCarta() {
     numeroCartaMaquina = parseInt(Math.random() * 13);
+    var numeroCartaJogador = parseInt(Math.random() * 13);
     cartaMaquina = cartas[numeroCartaMaquina];
 
-    var numeroCartaJogador = parseInt(Math.random() * 13);
     while (numeroCartaJogador == numeroCartaMaquina) {
         numeroCartaJogador = parseInt(Math.random() * 13);
     }
@@ -203,10 +202,10 @@ function sortearCarta() {
     cartaJogador = cartas[numeroCartaJogador];
     document.getElementById("btnSortear").disabled = true;
     document.getElementById("btnJogar").style.display = "inline";
+    document.getElementById("escolheatributotexto").style.display = "block";
     // document.getElementById("btnJogar").disabled = false;
 
     exibirOpcoes();
-
 }
 
 function exibirOpcoes() {
@@ -218,10 +217,9 @@ function exibirOpcoes() {
         opcoesTexto +=
             "<input type='radio' name='atributo' value='" +
             atributo + "'>" + nomeAtributo[contAtributo]
-
-        // atributo;
         contAtributo++
     }
+    opcoes.style.display = "block"
     opcoes.innerHTML = opcoesTexto;
 }
 
@@ -236,18 +234,31 @@ function obtemAtributoSelecionado() {
 
 function jogar() {
     var atributoSelecionado = obtemAtributoSelecionado();
+    var mostraresultado = document.getElementById("resultado");
+    mostraresultado.style.display = "block";
     if (
         cartaJogador.atributos[atributoSelecionado] >
         cartaMaquina.atributos[atributoSelecionado]
     ) {
-        alert("Venceu a carta do Jogador");
+        // alert("Venceu a carta do Jogador");
+        mostraresultado.innerHTML = "A sua carta venceu!"
     } else if (
         cartaJogador.atributos[atributoSelecionado] <
         cartaMaquina.atributos[atributoSelecionado]
     ) {
-        alert("Venceu a carta do Maquina");
+        //alert("Venceu a carta do Maquina");
+        mostraresultado.innerHTML = "Sua carta perdeu!"
     } else {
-        alert("Empate");
+        // alert("Empate");
+        mostraresultado.innerHTML = "Empate!"
     }
-    document.getElementById("imagens2").innerHTML = "<img id='carta' src='" + cartas[numeroCartaMaquina].imagem + "'>"
+    document.getElementById("imagens2").innerHTML = "<img id='carta' src='" + cartas[numeroCartaMaquina].imagem + "'>";
+    // var atributos = document.getElementById("opcoes");
+    // atributos.style.display = "none"
+    var botaoSortear = document.getElementById("btnSortear");
+    botaoSortear.style.display = "none"
+    var escondeForm = document.getElementById("form");
+    escondeForm.style.display = "none";
+
+
 }

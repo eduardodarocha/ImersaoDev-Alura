@@ -1,124 +1,145 @@
-﻿    body {
-        font-family: "Roboto Mono", monospace;
-        min-height: 672px;
-        background-image: url("http://2.bp.blogspot.com/-X7JmJh8fMbU/VmRdWw6O9mI/AAAAAAAAAdI/ygM0oVzc93k/s1600/Boteco%2BOuro.png");
-        /* background-image: url("https://i.pinimg.com/originals/35/72/2a/35722a296e9d0299bd208a154d3fe364.jpg"); */
-        /* background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png"); */
-        background-color: #000000;
-        background-size: cover;
-        background-position: center top;
-        background-repeat: no-repeat;
-        padding-bottom: 20vh;
-    }
-
-    .container {
-        text-align: center;
-        padding: 20px;
-    }
-
-    .page-title {
-        color: #000000;
-        margin: 6px auto 10px;
-        width: 230px;
-        background-color: #ffe60091;
-        border-radius: 10px;
-    }
-
-    /* button {
-        padding: 0.8rem 1.5rem;
-        margin: 1rem 0;
-        border-radius: 5px;
-        border: none;
-        font-size: 1rem;
-            } 
-*/
-
-    button {
-        display: block;
-        padding: 4px 17px;
-        font-size: 20px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #000;
-        background-color: #f7ec01;
-        border: 1px solid #929292;
-        border-radius: 10px;
-        box-shadow: 0 6px #7c6d00;
-        font-family: "Roboto Mono", monospace;
-        margin: auto;
-    }
-
-    button:hover {
-        background-color: #1a8d0bbb;
-    }
-
-    button:active {
-        background-color: #0d5304be;
-        box-shadow: 0 5px rgb(20, 53, 15);
-        transform: translateY(5px);
-    }
-
-    h2 {
-        color: black;
-        background-color: rgb(251 235 0 / 75%);
-        width: 300px;
-        margin: auto;
-        border-radius: 10px;
-        padding: 3px;
-    }
-
-    #carta-jogador {
-        width: 360px;
-        height: 500px;
-        overflow: auto;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        margin: 0 auto;
-        display: flex;
-        align-items: flex-end;
-    }
-
-    #carta-jogador h3 {
-        text-align: center;
-    }
-
-    .carta-imagem {
-        border: 1px solid black;
-        height: 100px;
-        margin: 10px;
-    }
-
-    .carta-imagem img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .carta-status {
-        height: 160px;
-        margin: 1.5rem;
-    }
-
-    .carta-status input {
-        margin: 20px 10px;
-    }
-
-    .opcoes {
-        color: white;
-    }
-
-    img#carta {
-        padding: 10px;
-        margin: auto;
-        width: 230px;
-        height: 325px;
-    }
-
-    img#page-logo {
-        width: 220px;
-    }
-
-    .carta {
-        display: inline-block;
-    }
+﻿        body {
+            font-family: "Roboto Mono", monospace;
+            min-height: 672px;
+            background-image: url("http://2.bp.blogspot.com/-X7JmJh8fMbU/VmRdWw6O9mI/AAAAAAAAAdI/ygM0oVzc93k/s1600/Boteco%2BOuro.png");
+            background-color: #000000;
+            background-size: contain;
+            background-position: center top;
+            background-repeat: no-repeat;
+            padding-bottom: 20vh;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .page-title {
+            color: #000000;
+            margin: 6px auto 10px;
+            width: 230px;
+            background-color: #ffe60091;
+            border-radius: 10px;
+        }
+        
+        button {
+            display: block;
+            padding: 4px 17px;
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #000;
+            background-color: #f7ec01;
+            border: 1px solid #929292;
+            border-radius: 10px;
+            box-shadow: 0 6px #7c6d00;
+            font-family: "Roboto Mono", monospace;
+            margin: auto;
+        }
+        
+        button:hover {
+            background-color: #1a8d0bbb;
+        }
+        
+        button:active {
+            background-color: #0d5304be;
+            box-shadow: 0 5px rgb(20, 53, 15);
+            transform: translateY(5px);
+        }
+        
+        h2 {
+            color: black;
+            background-color: rgb(251 235 0 / 75%);
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 3px;
+        }
+        
+        #carta-jogador {
+            width: 360px;
+            height: 500px;
+            overflow: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-end;
+        }
+        
+        #carta-jogador h3 {
+            text-align: center;
+        }
+        
+        .carta-imagem {
+            border: 1px solid black;
+            height: 100px;
+            margin: 10px;
+        }
+        
+        .carta-imagem img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .carta-status {
+            height: 160px;
+            margin: 1.5rem;
+        }
+        
+        .carta-status input {
+            margin: 20px 10px;
+        }
+        
+        .opcoes {
+            color: black;
+            width: fit-content;
+            background-color: #f7eb01d1;
+            margin: 10px auto;
+            padding: 7px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 17px;
+        }
+        
+        img#carta {
+            margin: auto;
+            width: 230px;
+            height: 325px;
+            border: 10px ridge #9ebaf0;
+            border-radius: 28px;
+        }
+        
+        img#page-logo {
+            width: 220px;
+        }
+        
+        .carta {
+            display: inline-block;
+        }
+        
+        #imagex {
+            height: 125px;
+            background-color: #faeb0075;
+            border-radius: 74px;
+            width: 125px;
+            position: relative;
+            top: -110px;
+        }
+        
+        #resultado {
+            background-color: rgb(247 235 1 / 75%);
+            color: #000;
+            font-size: 28px;
+            width: fit-content;
+            margin: auto;
+            padding: 3px 12px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        
+        #btnJogar {
+            display: block;
+        }

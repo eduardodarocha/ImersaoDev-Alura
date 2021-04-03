@@ -42,6 +42,8 @@
 
 #listaFilmes img {
     margin: 10px;
+    max-height: 50px;
+    max-width: 50px;
 }
 
 .form-wrapper {
@@ -61,7 +63,7 @@
     font-weight: bold;
     padding: 15px 20px;
     font-size: 16px;
-    borde-radius: 4px;
+    border-radius: 4px;
     margin-top: 20px;
     cursor: pointer;
     transition: .3s;
@@ -74,8 +76,31 @@
 p#showfilmesimagens img {
     padding: 20px 20px 0 0;
     display: inline-block;
+    min-height: 270px;
+    min-width: 185px;
+    max-height: 270px;
+    max-width: 185px;
 }
 
 button#addbtn2 {
     margin-top: 10px;
+}
+
+#maintitle {
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(218 30 38 / 70%);
+    width: fit-content;
+    margin-inline: auto;
+    border-radius: 10px;
+}
+
+ul {
+    display: block;
+    color: #ffffff;
+    text-align: justify;
+    width: fit-content;
+    margin: auto;
 }

@@ -23,8 +23,8 @@ function adicionarFilme() {
     } else {
 
         listImagens.push(addImage.value)
-        var addTrailer = document.querySelector("#inputfilmtraileraddress");
-        listTrailers.push(addTrailer.value)
+        var addTrailertemp = document.querySelector("#inputfilmtraileraddress");
+        listTrailers.push(addTrailertemp.value.replace("watch?v=", "embed/"))
     }
     inicio()
 }
@@ -42,7 +42,7 @@ function postaFilmes(filmeaddress, filmindex) {
 
 function videoFilme(filmindex) {
 
-    document.getElementById("showfilmesimagens").innerHTML = "<iframe width='640' height='360' src=" + listTrailers[filmindex] + "></iframe>";
+    document.getElementById("showfilmesimagens").innerHTML = "<iframe width='640' height='360' src=" + listTrailers[filmindex] + " title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
     document.getElementById("voltar").innerHTML = '<button onclick="inicio()">Voltar</button>';
 }
 

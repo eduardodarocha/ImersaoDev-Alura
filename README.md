@@ -1,8 +1,7 @@
 # ImersaoDev-Alura
 Aulas e desafios realizados na ImersãoDev da Alura:
-![](https://unavatar.now.sh/github/eduardodarocha)
 
-Eduardo Magalhães Ferreira da Rocha
+Eduardo da Rocha
 ===================================
 
 Desfios/Projetos da imersao.dev

@@ -4,12 +4,10 @@
     /* background-image: url("https://www.imagemhost.com.br/images/2021/04/05/Cavaleiros-de-Ouro-2.png"); */
     background-image: url("http://2.bp.blogspot.com/-X7JmJh8fMbU/VmRdWw6O9mI/AAAAAAAAAdI/ygM0oVzc93k/s1600/Boteco%2BOuro.png");
     background-color: #000000;
-    /* background-size: contain; */
-    background-size: cover;
+    background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
-    /* padding-bottom: 20vh; */
-    margin: auto;
+    padding-bottom: 20vh;
 }
 
 .container {

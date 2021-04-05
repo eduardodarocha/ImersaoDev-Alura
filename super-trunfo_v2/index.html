@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imersão Dev - Super Trunfo</title>
+    <title>Imersão Dev - Super Trunfo v2</title>
     <link rel="stylesheet" type="text/css" href="./style/style.css">
 </head>
 
@@ -13,6 +13,9 @@
     <div class="container">
         <img id="page-logo" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo" alt="">
         <h1 class="page-title">Super Trunfo</h1>
+
+        <div id="placar"></div>
+        <div id="quantidade-cartas"></div>
 
         <button onclick="sortearCarta()" id="btnSortear">Sortear as carta</button>
         <p class="carta" id="imagens"></p>
@@ -24,11 +27,14 @@
         <form id="form">
 
             <h2 id="escolheatributotexto" style="display:none">Escolha o seu atributo</h2>
-            <div class="opcoes" id="opcoes" style="display:none"></div>
-            <button type="button" id="btnJogar" onclick="jogar()" style="display:none">Jogar</button>
+            <div class="opcoes" id="opcoes"></div>
+            <!-- <div class="opcoes" id="opcoes" style="display:none"></div> -->
+            <button type="button" id="btnJogar" onclick="jogar()">Jogar</button>
+            <!-- <button type="button" id="btnJogar" onclick="jogar()" style="display:none">Jogar</button> -->
 
         </form>
-        <p><button type="button" id="iniciar" onclick="window.location.reload(true)">Refresh</button></p>
+        <p><button type="button" id="iniciar" onclick="inicio()">Refresh</button></p>
+        <!-- <p><button type="button" id="iniciar" onclick="window.location.reload(true)">Refresh</button></p> -->
     </div>
 
 

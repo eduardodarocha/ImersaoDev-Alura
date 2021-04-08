@@ -9,7 +9,7 @@ Desfios/Projetos da Imersao.dev
 
 1.  💰 [Conversor de Moedas](https://github.com/eduardodarocha/ImersaoDev-Alura/tree/main/conversor-de-moedas)
 2.  💡 [Conversor de Anos-luz para Km](https://github.com/eduardodarocha/ImersaoDev-Alura/tree/main/conversor-de-light-year-to-km)
-3.  🌡️ Conversor de Temperatura
+3.  🌡️ [Conversor de Temperatura](https://github.com/eduardodarocha/ImersaoDev-Alura/tree/main/conversor-de-temperatura)
 4.  🔢 [Calculadora](https://github.com/eduardodarocha/ImersaoDev-Alura/tree/main/calculadora)
 5.  🧠 [Mentalist](https://github.com/eduardodarocha/ImersaoDev-Alura/tree/main/mentalista)
 6.  🐱‍👤 [Mentalist v2 - Personagens Naruto]()

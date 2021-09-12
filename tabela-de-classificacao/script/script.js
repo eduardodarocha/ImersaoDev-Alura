@@ -14,14 +14,6 @@ var rafa = {
     pontos: 0
 };
 
-function calculaPontos(jogador) {
-    var pontos = jogador.vitorias * 3 + jogador.empates;
-    return pontos;
-}
-
-rafa.pontos = calculaPontos(rafa);
-paulo.pontos = calculaPontos(paulo);
-
 var jogadores = [rafa, paulo];
 
 function exibirJogadoresNaTela(jogadores) {
@@ -37,15 +29,25 @@ function exibirJogadoresNaTela(jogadores) {
 
         if (i == 0) {
             html += '<th rowspan="2"><button onClick="jogadores.forEach(adicionarEmpate)">Empate</button></th>';
-            html += "<td><button onClick='adicionarDerrota(" + i + ")'>Derrota</button></td></th></tr>";
-        } else {
+            // html += "<td><button onClick='adicionarDerrota(" + (i+1) +  ")'>Derrota</button></td></th></tr>";
+            // html += "<td><button onClick='adicionarDerrota(" + i + ")'>Derrota</button></td></th></tr>";
+        }
+         else {
 
-            html += "<td><button onClick='adicionarDerrota(" + i + ")'>Derrota</button></td></tr>";
+            // html += "<td><button onClick='adicionarDerrota(" + i + ")'>Derrota</button></td></tr>";
         }
     }
     var tabelaJogadores = document.getElementById("tabelaJogadores");
     tabelaJogadores.innerHTML = html;
 }
+
+function calculaPontos(jogador) {
+    var pontos = jogador.vitorias * 3 + jogador.empates;
+    return pontos;
+}
+
+rafa.pontos = calculaPontos(rafa);
+paulo.pontos = calculaPontos(paulo);
 
 exibirJogadoresNaTela(jogadores);
 
@@ -53,6 +55,11 @@ function adicionarVitoria(i) {
     var jogador = jogadores[i];
     jogador.vitorias++;
     jogador.pontos = calculaPontos(jogador);
+    if (i == 0) {
+    adicionarDerrota(i + 1);
+    } else if (i == 1) {
+        adicionarDerrota(i - 1);
+    }
     exibirJogadoresNaTela(jogadores);
 }
 

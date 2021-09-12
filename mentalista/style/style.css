@@ -5,13 +5,14 @@
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+    overflow-y:hidden;
 }
 
 .container {
     text-align: center;
     padding: 20px;
     height: 100vh;
-    background-image: url("https://www.elitedetetives.com.br/blog/wp-content/webp-express/webp-images/doc-root/blog/wp-content/uploads/2020/06/o-detetive-e-a-invasao-de-privacidade.jpg.webp");
+    background-image: url("../image/o-detetive-e-a-invasao-de-privacidade.jpg");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;

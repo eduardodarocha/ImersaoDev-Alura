@@ -59,6 +59,7 @@ function newCharacter() {
     if (display == "block") {
         changeDisplay("resposta")
     }
+    document.getElementById('inputname').value = '';
 }
 
 newCharacter();
@@ -75,16 +76,16 @@ function changeDisplay(el) {
 function discover() {
     var inputName = document.getElementById("inputname").value;
 
-
     if (inputName.length) {
         if (inputName.toLowerCase() == characters[indexNumber].nome.toLowerCase()) {
             document.getElementById("resposta").style.display = 'block';
             document.getElementById("resposta").innerHTML = "Você acertou だってばよ";
-
         } else {
             changeDisplay("resposta");
             document.getElementById("resposta").style.display = 'block';
             document.getElementById("resposta").innerHTML = "Tente outra vez";
+            document.getElementById('inputname').value = '';
+          
         }
     } else {
         changeDisplay("resposta");

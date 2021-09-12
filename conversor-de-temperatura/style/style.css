@@ -2,7 +2,7 @@
             font-family: "Roboto Mono", monospace;
             min-height: 450px;
             background: url("https://thumbs.dreamstime.com/b/term-metro-celsius-e-fahrenheit-85958505.jpg") no-repeat bottom left, url("https://thumbs.dreamstime.com/b/term-metro-celsius-e-fahrenheit-85958505.jpg") no-repeat bottom right;
-            background-color: #000000;
+            background-color: #ffffff;
             background-size: 70vh;
         }
         
@@ -18,7 +18,7 @@
         }
         
         .page-subtitle {
-            color: #ffffff;
+            color: red;
             margin-top: auto;
             font-size: 20px;
             text-align: center;

@@ -1,4 +1,9 @@
 ﻿var listaFilmes = [
+    "https://m.media-amazon.com/images/M/MV5BNTQ5YjkyZWYtNzUyNC00MjM3LWFhNWUtNDcxNzNiZGFlNzI2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BNzA4MjEzMTktZWMxYS00YWQ1LWJhMWItZTUyMGFmZjFmMjE4XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BMmE1ZTA3MjQtY2E1My00NzM0LWIzN2EtMWJlZjc5ZTgzZTkwXkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BNTMxOGI4OGMtMTgwMy00NmFjLWIyOTUtYjQ0OGQ4Mjk0YjNjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BYWQ2NzQ1NjktMzNkNS00MGY1LTgwMmMtYTllYTI5YzNmMmE0XkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "https://m.media-amazon.com/images/M/MV5BMTUzYTY4OTctNDg3NS00ZjY1LWE5Y2YtMTBiODU5OTViOTE0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY268_CR1,0,182,268_AL_.jpg",
@@ -18,6 +23,16 @@
 ];
 
 var listaFilmesVideos = [
+    "https://www.youtube.com/embed/aHmDi6CUQ3M",
+
+    "https://www.youtube.com/embed/K1TloEu4EXA",
+
+    "https://www.youtube.com/embed/dnBpZuSUISQ",
+    
+    "https://www.youtube.com/embed/BAjP9eBskcw",
+    
+    "https://www.youtube.com/embed/OqhECMyn7TA",
+
     "https://www.youtube.com/embed/gBKx63Y6rG4",
 
     "https://www.youtube.com/embed/mbbPSq63yuM",
